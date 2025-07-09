@@ -1,4 +1,4 @@
-# hash:sha256:d1b1abfefa6b76737ea86e3cf1f34567a705be8adeec1012ccbbc18d9671cbf5
+# hash:sha256:b93ed9bbf3538ec2b84a8ba32d8758b73b575a4a2cf716b1bf895feb76eceb01
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
 
@@ -13,5 +13,5 @@ RUN pip install -U --no-cache-dir \
     hdmf==3.14.6 \
     hdmf-zarr==0.11.1 \
     nwbwidgets==0.11.3 \
-    pandas==3.0.0 \
+    pandas==2.2.3 \
     pynwb==3.0.0
