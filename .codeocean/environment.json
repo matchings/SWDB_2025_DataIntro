@@ -9,12 +9,19 @@
 		"pip": {
 			"packages": [
 				{
+					"name": "aind-data-access-api"
+				},
+				{
 					"name": "hdmf",
 					"version": "3.14.6"
 				},
 				{
 					"name": "hdmf-zarr",
 					"version": "0.11.1"
+				},
+				{
+					"name": "nwbwidgets",
+					"version": "0.11.3"
 				},
 				{
 					"name": "pandas",
