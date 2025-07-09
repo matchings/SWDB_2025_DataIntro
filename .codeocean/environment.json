@@ -4,5 +4,29 @@
 	"options": {
 		"registry_host_arg": true,
 		"git_ask_pass": true
+	},
+	"installers": {
+		"pip": {
+			"packages": [
+				{
+					"name": "hdmf",
+					"version": "3.14.6"
+				},
+				{
+					"name": "hdmf-zarr",
+					"version": "0.11.1"
+				},
+				{
+					"name": "pandas",
+					"version": "3.0.0"
+				},
+				{
+					"name": "pynwb",
+					"version": "3.0.0"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
 	}
 }
