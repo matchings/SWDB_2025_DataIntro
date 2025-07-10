@@ -9,7 +9,8 @@
 		"pip": {
 			"packages": [
 				{
-					"name": "aind-data-access-api"
+					"name": "aind-data-access-api",
+					"version": "1.3.0"
 				},
 				{
 					"name": "hdmf",
