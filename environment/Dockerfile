@@ -1,6 +1,6 @@
-# hash:sha256:a1568a42ca267bcf84bdb1e7db75cc759107383c866ff3d1ac6c1f9dd7478547
+# hash:sha256:cb47d9088ae41cbae3ea88083b26736aef0b1d1eab9ee646d57a476b6e767804
 ARG REGISTRY_HOST
-FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
+FROM $REGISTRY_HOST/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -8,15 +8,13 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
-RUN pip install -U --no-cache-dir \
-    aind-data-access-api==1.3.0 \
-    hdmf==3.14.1 \
+RUN pip3 install -U --no-cache-dir \
+    hdmf==3.14.6 \
     hdmf-zarr==0.6.0 \
-    matplotlib==3.8.0 \
-    numpy==1.23.2 \
+    matplotlib==3.9.4 \
     nwbwidgets==0.11.3 \
     pandas==1.5.3 \
-    pynwb==2.8.0
+    pynwb==2.8.3
 
 COPY postInstall /
 RUN /postInstall
