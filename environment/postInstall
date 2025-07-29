@@ -1,5 +1,2 @@
 #!/usr/bin/env bash
 set -e
-
-
-pip install allensdk==2.16.2 --ignore-installed numpy
